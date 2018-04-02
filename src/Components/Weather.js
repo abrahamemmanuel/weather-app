@@ -1,10 +1,14 @@
 import React from "react";
 
-const Weather = (props) => {
 
-    return (
+/*stateless components
+*explicit return 
+*whenever a component does not contains a state
+*/
+const Weather = props => (
 
-        <div>
+    <div>
+        
            { props.city && props.country && <p>Location: {props.city}, {props.country}</p> }
                
            { props.temperature &&  <p>Temperature:  {props.temperature}</p>  }
@@ -13,11 +17,11 @@ const Weather = (props) => {
  
            { props.description &&  <p>Conditions:  {props.description}</p>  }
 
-           { props.error && <p>{props.error}</p> }
-           </div>        
+           { props.error && <p>{props.error}</p> }      
 
-    );
+    </div>        
 
-}
+
+);
 
 export default Weather;
