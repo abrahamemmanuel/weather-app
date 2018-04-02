@@ -38,14 +38,14 @@ class App extends React.Component{
       const city = e.target.elements.city.value;
       const country = e.target.elements.country.value;
 
-      //assign the api token to const API_KEY
+      //assign the api token to const API_KEY provided by openweathermap
       const API_KEY = "9ad1ffad874b3d90cee3c8d106a737ab";
 
       //declare a variable to hold api url
       var url =" http://api.openweathermap.org/data/2.5/weather?q="+city+","+country+"&appid="+API_KEY;
 
 
-      //making api call using async await 
+      //making api call using await 
       //inject api url into the fetch function call
       const api_call = await fetch(url);
 
