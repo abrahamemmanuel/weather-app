@@ -26,7 +26,7 @@ class App extends React.Component{
 
   }
 
-  //create function that grabs the data from the api url
+  //create function that grabs the data from the api url 
     getWeather = async(e) => {
 
       //prevent a full page refresh
