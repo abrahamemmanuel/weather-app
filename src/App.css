@@ -25,14 +25,13 @@ body {
 
 .title-container {
   height: 90vh;
-  background:center center no-repeat;
+  background:  center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #000;
-
 }
 
 .title-container__title {
