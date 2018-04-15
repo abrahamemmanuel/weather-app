@@ -6,6 +6,7 @@ import Weather from "./Components/Weather";
 
 
 
+
 class App extends React.Component{
 
 
@@ -88,19 +89,19 @@ class App extends React.Component{
     return(
 
       <div>
-        <div className="wrapper">
+        <div className="wrapper ">
 
           <div className="main">
 
-            <div className="container">
+            <div className="container container-fluid">
 
-               <div className="row">
+               <div className="row ">
 
-               <div className="col-xs-5 title-container">
+               <div className="col-xs-6  title-container">
 
                 <Titles/>
                 
-                 <div className="col-xs-7 form-container">
+                 <div className="col-xs-6 form-container">
                  <Form getWeather={this.getWeather}/>
                         <Weather temperature={this.state.temperature}
                                   city={this.state.city}

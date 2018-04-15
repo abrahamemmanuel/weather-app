@@ -1,7 +1,7 @@
 import React from "react";
 
 const Form = props => (
-
+<div className="col-md-*">
   <form onSubmit={props.getWeather}>
 
       <input type="text" name="city" placeholder="city..."/>
@@ -11,6 +11,7 @@ const Form = props => (
       <button>Get Weather</button>
 
    </form>
+</div>
 
 );
 

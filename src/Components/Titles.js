@@ -6,7 +6,7 @@ import React from "react";
 
 const Titles = () => (
   
-    <div>
+    <div className="img-responsive">
       
         <h1 className="title-container__title">Weather Finder </h1>
 
