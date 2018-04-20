@@ -6,27 +6,28 @@ import Weather from "./Components/Weather";
 
 
 
-
 class App extends React.Component{
-  
   
   //state is an object which contains key value pairs
   //this keeps track of data interaction in our program whenever the getWeather function is called 
   state = {
     
-    temperature: undefined,
+      temperature: undefined,
+      
+      city: undefined,
+      
+      country: undefined,
+      
+      humidity: undefined,
+        
+      description: undefined,
+      
+      error: undefined
     
-    city: undefined,
-    
-    country: undefined,
-    
-    humidity: undefined,
-    
-    description: undefined,
-    
-    error: undefined
-    
-  }
+  }     
+
+ 
+
   
   //create function that grabs the data from the api url 
   
@@ -50,9 +51,8 @@ class App extends React.Component{
       //making api call using await 
       //inject api url into the fetch function call
       const api_call = await fetch(url);
+    
 
-      
-       
       //convert the data fetched from the api to JSON format
       //assign it to a const data
       const data = await api_call.json();
@@ -112,7 +112,9 @@ class App extends React.Component{
                     
                         />
 
-                       
+                       <div className="man">
+                         <div className="men"></div>
+                       </div>
 
 
                     </div>
