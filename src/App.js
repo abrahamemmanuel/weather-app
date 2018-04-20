@@ -8,29 +8,29 @@ import Weather from "./Components/Weather";
 
 
 class App extends React.Component{
-
-
+  
+  
   //state is an object which contains key value pairs
   //this keeps track of data interaction in our program whenever the getWeather function is called 
   state = {
- 
+    
     temperature: undefined,
-
+    
     city: undefined,
-
+    
     country: undefined,
-
+    
     humidity: undefined,
-
+    
     description: undefined,
-
+    
     error: undefined
-
+    
   }
-
+  
   //create function that grabs the data from the api url 
-    getWeather = async(e) => {
-
+  
+  getWeather = async(e) => {
       //prevent a full page refresh
       //this signifies SPA
       e.preventDefault();
